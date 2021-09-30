@@ -11,11 +11,11 @@ for (let i=0; i <pokemonList.length; i++){
 
 for (let i=0; i < pokemonList.length; i++){
     if (pokemonList[i].height <0.8 && pokemonList[i].height >0.4){
-        document.write('<p>' + pokemonList[i].name + pokemonList[i].height + ' is an average sized pokemon' + '<p>'); 
+        document.write('<p>' + pokemonList[i].name + ' ' + pokemonList[i].height + ' is an average sized pokemon' + '</p>'); 
     }else if (pokemonList[i].height <0.4){
-                document.write(pokemonList[i].name + pokemonList[i].height + ' is a small pokemon');
+                document.write('<p>' + pokemonList[i].name + ' ' + pokemonList[i].height + ' is a small pokemon' + '</p>');
     }else 
-            document.write(pokemonList[i].name + pokemonList[i].height + ' is a large pokemon');
+            document.write('<p>' + pokemonList[i].name + ' ' + pokemonList[i].height + ' is a large pokemon' + '</p>');
     }
     
         

@@ -22,10 +22,10 @@ return {
 
 document.write(pokemonRepository.getAll ());
 
-pokemonList.forEach(function(pokemon)){
+pokemonList.forEach(function(pokemon) {
     return(pokemon.name + ' is ' + pokemon.height + ' meters tall ' 
     + ' is a ' + pokemon.type + ' type of Pokemon ');
-}
+});
 
 
 

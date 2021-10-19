@@ -1,6 +1,6 @@
 var pokemonRepository = (function () {
 var pokemonList = [
-    {name: 'Bulbasaur', height: 0.7,  type:['grass', 'poison']}, 
+    {name: 'Bulbasaur', height: 0.7,  type:['grass','poison']}, 
     {name: 'Charmander', height: 0.6, type: 'fire' },
     {name: 'Squirtle', height: 0.5, type: 'water'}
 ];
@@ -21,10 +21,14 @@ return {
 } )();
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-    document.write(
-        pokemon.name + ' is ' + pokemon.height + ' meters tall ' + 
-        ' and is a ' + pokemon.type + ' type of pokemon ' + '<br>' + '<br>'
-    );
+
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listPokemon = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = 'placeHolder';
+    button.classList.add('button-class')
+    listPokemon.appendChild(button);
+    pokemonList.appendChild(listPokemon);
 });
 
 // pokemonList.forEach(function(pokemon) {

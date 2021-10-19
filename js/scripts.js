@@ -20,12 +20,17 @@ return {
 
 } )();
 
-document.write(pokemonRepository.getAll ());
-
-pokemonList.forEach(function(pokemon) {
-    return(pokemon.name + ' is ' + pokemon.height + ' meters tall ' 
-    + ' is a ' + pokemon.type + ' type of Pokemon ');
+pokemonRepository.getAll().forEach(function (pokemon) {
+    document.write(
+        pokemon.name + ' is ' + pokemon.height + ' meters tall ' + 
+        ' and is a ' + pokemon.type + ' type of pokemon ' + '<br>' + '<br>'
+    );
 });
+
+// pokemonList.forEach(function(pokemon) {
+//     return(pokemon.name + ' is ' + pokemon.height + ' meters tall ' 
+//     + ' is a ' + pokemon.type + ' type of Pokemon ');
+// });
 
 
 

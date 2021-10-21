@@ -13,11 +13,10 @@ h1 {
     display: inline-block;
     font-size: 16 px;
     margin: 4px 2px;
-    transition-timing-function: linear;
-    transition: width 2s;
-    
 }
 
-/* .button-class:hover {
+.button-class:hover {
     width: 300px;
-} */
+    transition-timing-function: linear;
+    transition: width 2s;
+}

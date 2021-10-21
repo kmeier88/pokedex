@@ -10,7 +10,7 @@ h1 {
     color: black;
     padding: 16px 32px;
     text-align: center;
-    /* display: inline-block; */
+    display: inline-block;
     font-size: 16 px;
     margin: 4px 2px;
     transition-timing-function: linear;
@@ -18,6 +18,6 @@ h1 {
     
 }
 
-.button-class:hover {
+/* .button-class:hover {
     width: 300px;
-}
+} */

@@ -14,7 +14,7 @@ h1 {
     font-size: 16 px;
     margin: 4px 2px;
     transition-timing-function: ease-out;
-    width: 2s;
+    transition: width 2s;
     
 }
 

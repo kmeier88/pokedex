@@ -13,7 +13,7 @@ h1 {
     display: inline-block;
     font-size: 16 px;
     margin: 4px 2px;
-    transition-timing-function: ease-out;
+    transition-timing-function: linear;
     transition: width 2s;
     
 }

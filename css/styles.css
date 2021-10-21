@@ -14,11 +14,10 @@ h1 {
     font-size: 16 px;
     margin: 4px 2px;
     transition-timing-function: ease-out;
-    transition-duration: 1s;
+    width: 2s;
+    
 }
 
 .button-class:hover {
     width: 300px;
-    transition-timing-function: ease-out;
-    transition-duration: 1s;
 }

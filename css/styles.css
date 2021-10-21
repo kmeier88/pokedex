@@ -16,3 +16,7 @@ h1 {
     transition-timing-function: ease-out;
     transition-duration: 0.4s;
 }
+
+.button-class:hover {
+    width: 300px;
+}

@@ -13,4 +13,5 @@ h1 {
     display: inline-block;
     font-size: 16 px;
     margin: 4px 2px;
+    transition-duration: 0.4s;
 }

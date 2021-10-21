@@ -18,5 +18,7 @@ h1 {
 
 .button-class:hover {
     width: 300px;
+    background-color: darkcyan;
+    font-size: 24px;
     /* transition-timing-function: linear; */
 }

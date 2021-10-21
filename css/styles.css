@@ -19,4 +19,6 @@ h1 {
 
 .button-class:hover {
     width: 300px;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
 }

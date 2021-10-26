@@ -21,7 +21,9 @@ function addListItem (pokemon) {
     button.classList.add('button-class')
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
-    button.addEventListener('click', showDetails (pokemon));
+    button.addEventListener('click', function() { 
+        showDetails(pokemon)
+    });
 }
 
 function showDetails(pokemon) {

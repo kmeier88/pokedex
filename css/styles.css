@@ -13,7 +13,8 @@ h1 {
     display: inline-block;
     font-size: 16 px;
     margin: 4px 2px;
-    transition: 200px 2s;
+    transition: width 2s;
+    width: 200px;
 }
 
 .button-class:hover {

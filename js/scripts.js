@@ -65,6 +65,7 @@ function loadDetails (item) {
 return {
     getAll: getAll,
     add: add,
+    addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails
 };

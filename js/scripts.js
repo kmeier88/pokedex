@@ -7,7 +7,14 @@ function getAll () {
 }
 
 function add(pokemon) {
+    if (
+        typeof pokemon === "object" &&
+        "name" in pokemon
+    ) {
     pokemonList.push(pokemon);
+    } else {
+        console.log("pokemon error");
+    }
 }
 
 function addListItem (pokemon) {
@@ -63,7 +70,8 @@ return {
     add: add,
     addListItem: addListItem,
     loadList: loadList,
-    loadDetails: loadDetails
+    loadDetails: loadDetails,
+    showDetails: showDetails
 };
 })();
 

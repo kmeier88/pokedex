@@ -59,7 +59,10 @@ function loadDetails (item) {
     }).then(function (details) {
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
-        item.types = details.types;
+        item.types = [];
+            details.types.forEach(function (itemType){
+                item.types.push(itemType.type.name);
+            });
     }).catch(function (e) {
         console.error(e);
     });
@@ -83,7 +86,7 @@ function loadDetails (item) {
         contentElement.innerText = "Height:" + item.height;
 
         let typeElement = document.createElement('p');
-        typeElement.innerText = "Type of Pokemon:" + item.types;
+        typeElement.innerText = "Type of Pokemon:" + " " + item.types;
 
         let pokemonImage = document.createElement('img');
         pokemonImage.src = item.imageUrl;

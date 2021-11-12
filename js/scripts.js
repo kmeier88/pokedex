@@ -69,6 +69,27 @@ function loadDetails (item) {
     });
 }
 
+    function showModal(item) {
+        let modalBody = $(".modal-body");
+        let modalTitle = $(".modal-title");
+        let modalHeader = $(".modal-header");
+
+        modalTitle.empty();
+        modalBody.empty();
+
+        let nameElement = $('<h1>' + item.name + '</h1>');
+        let imageElement = $('<img class = "modal-img" style="width:50%">');
+        imageElement.attr("src", item.imageUrl);
+        let heightElement = $("<p>" + "Height: " + item.height + "</p>");
+        let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
+        let typesElement = $("<p>" + "Type: " + item.types + "</p>");
+
+        modalTitle.append(nameElement);
+        modalBody.append(imageElement);
+        modalBody.append(heightElement);
+        modalBody.append(typesElement);
+    }
+
 //     let modalContainer = document.querySelector('#modal-container');
 //     function showModal(item) {
 //         modalContainer.innerHTML = '';

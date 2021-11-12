@@ -24,6 +24,8 @@ function addListItem (pokemon) {
     listPokemon.classList.add('group-list-item');
     button.innerText = pokemon.name;
     button.classList.add('btn-primary');
+    button.setAttribute("data-target", "#exampleModal");
+    button.setAttribute("data-toggle", "modal");
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
     button.addEventListener('click', function() { 

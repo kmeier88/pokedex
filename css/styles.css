@@ -1,24 +1,58 @@
-h1 {
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.button-class {
-    background-color: cornflowerblue;
+.page-header{
+    padding: 50px;
+}
+
+.navbar {
+    background-color: #FF0000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand {
+    margin-left: 3vw;
+}
+
+navbar-toggler {
+    margin-right: 3vw;
+}
+
+.pokemon-list {
+    margin-top: 125px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+li.group-list-item {
+    margin-bottom: 15px;
+}
+
+.btn {
+    text-transform: capitalize; 
+    background-color: #ffcb05;
     border: solid;
+    border-color: #c7a008;
     color: black;
     padding: 16px 32px;
     text-align: center;
     display: inline-block;
-    font-size: 16 px;
+    font-size: 30 px;
     margin: 4px 2px;
-    transition: width 2s;
-    width: 200px;
+    /* transition: width 1s; */
+    width: 300px;
 }
 
-.button-class:hover {
-    width: 300px;
-    background-color: darkcyan;
-    font-size: 24px;
+.group-list-item{
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    /* width: 300px; */
+    background-color: #c7a008;
+    color: #000;
+    
 }

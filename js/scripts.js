@@ -20,14 +20,18 @@ function add(pokemon) {
 function addListItem (pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
     let listPokemon = document.createElement('li');
+    listPokemon.classList.add('group-list-item', 'col-lg-4', 'col-md-6');
+    
     let button = document.createElement('button');
-    listPokemon.classList.add('group-list-item');
     button.innerText = pokemon.name;
-    button.classList.add('btn-primary');
-    button.setAttribute("data-target", "#exampleModal");
+    button.classList.add('btn-primary', 'btn');
+
+    button.setAttribute("data-target", "#pokemonModalContainer");
     button.setAttribute("data-toggle", "modal");
+
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
+    
     button.addEventListener('click', function() { 
         showDetails(pokemon)
     });
@@ -78,19 +82,24 @@ function loadDetails (item) {
 
         modalTitle.empty();
         modalBody.empty();
-
+        
         let nameElement = $('<h1>' + item.name + '</h1>');
+
         let imageElement = $('<img class = "modal-img" style="width:50%">');
         imageElement.attr("src", item.imageUrl);
+
         let heightElement = $("<p>" + "Height: " + item.height + "</p>");
-        let weightElement = $("<p>" + "weight: " + item.weight + "</p>");
+       
         let typesElement = $("<p>" + "Type: " + item.types + "</p>");
+        
 
         modalTitle.append(nameElement);
         modalBody.append(imageElement);
         modalBody.append(heightElement);
         modalBody.append(typesElement);
     }
+
+    let pokemonSearchBar = document.querySelector('#filter');
 
 return {
     getAll: getAll,

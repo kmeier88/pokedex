@@ -56,3 +56,12 @@ li.group-list-item {
     color: #000;
     
 }
+
+footer {
+    margin-bottom: 50px;
+}
+
+#return {
+    display: flex;
+    justify-content: center;
+}

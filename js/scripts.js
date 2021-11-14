@@ -3,6 +3,8 @@ let pokemonRepository = (function () {
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
 function getAll () {
+    let pokemonSearchBar = document.querySelector('#filter');
+    console.log(pokemonSearchBar);
     return pokemonList;
 }
 
@@ -122,7 +124,9 @@ return {
     addListItem: addListItem,
     loadList: loadList,
     loadDetails: loadDetails,
-    showDetails: showDetails
+    showDetails: showDetails,
+    showModal: showModal,
+    search: search
 };
 })();
 
@@ -131,3 +135,4 @@ pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
     });
 });
+pokemonRepository.search();

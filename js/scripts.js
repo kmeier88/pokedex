@@ -99,7 +99,22 @@ function loadDetails (item) {
         modalBody.append(typesElement);
     }
 
-    let pokemonSearchBar = document.querySelector('#filter');
+    function search() {
+        let searchPokemon = document.querySelector("#filter");
+    
+        searchPokemon.addEventListener("input", function () {
+          let pokemonList = document.querySelectorAll(".group-list-item");
+          let searchItem = searchPokemon.value.toLowerCase();
+    
+          pokemonList.forEach(function (pokemon) {
+            if (pokemon.innerText.toLowerCase().includes(searchItem)) {
+              pokemon.style.display = "";
+            } else {
+              pokemon.style.display = "none";
+            }
+          });
+        });
+      }
 
 return {
     getAll: getAll,
